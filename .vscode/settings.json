@@ -1,0 +1,23 @@
+{
+    "cucumberautocomplete.steps": ["src/test/java/steps/**/*.java"],
+    "cucumberautocomplete.syncfeatures": "src/test/**/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.strictGherkinValidation": true,
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.stepsInvariants": true,
+    "cucumberautocomplete.skipDocStringsFormat": true,
+    "cucumberautocomplete.formatConfOverride": {
+        "And": 15,
+        "But": "relative",
+    },
+    "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+    },   
+
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.jdt.Is.java.home": "C:/Program Files/Java/jdk-23"
+}
+
