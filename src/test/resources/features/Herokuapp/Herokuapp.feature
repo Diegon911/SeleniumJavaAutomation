@@ -1,5 +1,5 @@
 @PracticasHerokuapp
-Feature: Automatizar acciones en Herokuapp
+Feature: Automatizar acciones en Herokuapp para practica
 Practicar y realizar actividades de practica para la automatizacion
 
 @ValidacionAB
