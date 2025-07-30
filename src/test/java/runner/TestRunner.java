@@ -12,7 +12,7 @@ import pages.BasePage;
                  glue = "steps", 
                  plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/cucumber-reports.json"},
                  //plugin = { "pretty", "html:target/cucumber-reports" },
-                 tags = "@PracticasHerokuapp")
+                 tags = "@PruebasRegistro")
  
 public class TestRunner {
 

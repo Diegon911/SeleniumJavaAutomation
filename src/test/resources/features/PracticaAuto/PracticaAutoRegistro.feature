@@ -24,8 +24,8 @@ Scenario Outline: Registro de usuario correcto
   Then El usuario es guardado exitosamente y regreso a la pagina de Login
 
   Examples:
-  |nombre |apellido  |fecha nacimiento|direccion     |codigo postal|ciudad  |estado   |telefono  |password   |
-  |Test123|Testing123|01011991        |TestAddress99 |09999        |TestCity|TestState|5555555555|Testing@091|
+  |nombre |apellido  |fecha nacimiento  |direccion     |codigo postal|ciudad  |estado   |telefono  |password   |
+  |Test123|Testing123|1991-01-01        |TestAddress99 |09999        |TestCity|TestState|5555555555|Testing@091|
 
 
 @RegistroUserRepetidoTTF
@@ -48,8 +48,8 @@ Scenario Outline: Registro de usuario repetido
   Then El usuario no se pudo registrar porque ya existe
 
   Examples:
-  |nombre |apellido  |fecha nacimiento|direccion     |codigo postal|ciudad  |estado   |telefono  |email        |password   |
-  |Test123|Testing123|01011991        |TestAddress99 |09999        |TestCity|TestState|5555555555|Test@test.com|Testing@091|
+  |nombre |apellido  |fecha nacimiento  |direccion     |codigo postal|ciudad  |estado   |telefono  |email        |password   |
+  |Test123|Testing123|1991-01-01        |TestAddress99 |09999        |TestCity|TestState|5555555555|Test@test.com|Testing@091|
 
 @RegistroUserSinNombreTTF
 Scenario Outline: Registro de usuario sin nombre
@@ -70,8 +70,8 @@ Scenario Outline: Registro de usuario sin nombre
   Then El usuario no se pudo registrar porque no tiene nombre
 
   Examples:
-  |apellido  |fecha nacimiento|direccion     |codigo postal|ciudad  |estado   |telefono  |email                |password    |
-  |Testing123|01011991        |TestAddress99 |09999        |TestCity|TestState|5555555555|TestingT120@test.com|Testing@0911|
+  |apellido  |fecha nacimiento  |direccion     |codigo postal|ciudad  |estado   |telefono  |email               |password    |
+  |Testing123|1991-01-01        |TestAddress99 |09999        |TestCity|TestState|5555555555|TestingT120@test.com|Testing@0911|
 
 @RegistroUserSinApellidoTTF
 Scenario Outline: Registro de usuario sin apellido
@@ -92,8 +92,8 @@ Scenario Outline: Registro de usuario sin apellido
   Then El usuario no se pudo registrar porque no tiene apellido
 
   Examples:
-  |nombre |fecha nacimiento|direccion     |codigo postal|ciudad  |estado   |telefono  |password   |
-  |Test123|01011991        |TestAddress99 |09999        |TestCity|TestState|5555555555|Testing@091|
+  |nombre |fecha nacimiento  |direccion     |codigo postal|ciudad  |estado   |telefono  |password   |
+  |Test123|1991-01-01        |TestAddress99 |09999        |TestCity|TestState|5555555555|Testing@091|
 
 @RegistroUserSinFechaNacTTF
 Scenario Outline: Registro de usuario sin fecha de nacimiento
@@ -136,8 +136,8 @@ Scenario Outline: Registro de usuario sin direccion
   Then El usuario no se pudo registrar porque no tiene direccion
 
   Examples:
-  |nombre |apellido  |fecha nacimiento|codigo postal|ciudad  |estado   |telefono  |email               |password   |
-  |Test123|Testing123|01011991        |09999        |TestCity|TestState|5555555555|TestingX101@test.com|Testing@091|
+  |nombre |apellido  |fecha nacimiento  |codigo postal|ciudad  |estado   |telefono  |email               |password   |
+  |Test123|Testing123|1991-01-01        |09999        |TestCity|TestState|5555555555|TestingX101@test.com|Testing@091|
 
 @RegistroUserSinCodigoPostalTTF
 Scenario Outline: Registro de usuario sin codigo postal
@@ -158,8 +158,8 @@ Scenario Outline: Registro de usuario sin codigo postal
   Then El usuario no se pudo registrar porque no tiene codigo postal
 
   Examples:
-  |nombre |apellido  |fecha nacimiento|direccion     |ciudad  |estado   |telefono  |email               |password   |
-  |Test123|Testing123|01011991        |TestAddress99 |TestCity|TestState|5555555555|TestingX101@test.com|Testing@091|
+  |nombre |apellido  |fecha nacimiento  |direccion     |ciudad  |estado   |telefono  |email               |password   |
+  |Test123|Testing123|1991-01-01        |TestAddress99 |TestCity|TestState|5555555555|TestingX101@test.com|Testing@091|
 
 @RegistroUserSinCiudadTTF
 Scenario Outline: Registro de usuario sin ciudad
@@ -180,8 +180,8 @@ Scenario Outline: Registro de usuario sin ciudad
   Then El usuario no se pudo registrar porque no tiene ciudad
 
   Examples:
-  |nombre |apellido  |fecha nacimiento|direccion     |codigo postal|estado   |telefono  |email               |password   |
-  |Test123|Testing123|01011991        |TestAddress99 |09999        |TestState|5555555555|TestingX101@test.com|Testing@091|
+  |nombre |apellido  |fecha nacimiento  |direccion     |codigo postal|estado   |telefono  |email               |password   |
+  |Test123|Testing123|1991-01-01        |TestAddress99 |09999        |TestState|5555555555|TestingX101@test.com|Testing@091|
 
 @RegistroUserSinEstadoTTF
 Scenario Outline: Registro de usuario sin estado
@@ -202,8 +202,8 @@ Scenario Outline: Registro de usuario sin estado
   Then El usuario no se pudo registrar porque no tiene estado
 
   Examples:
-  |nombre |apellido  |fecha nacimiento|direccion     |codigo postal|ciudad  |telefono  |email               |password   |
-  |Test123|Testing123|01011991        |TestAddress99 |09999        |TestCity|5555555555|TestingX101@test.com|Testing@091|
+  |nombre |apellido  |fecha nacimiento  |direccion     |codigo postal|ciudad  |telefono  |email               |password   |
+  |Test123|Testing123|1991-01-01        |TestAddress99 |09999        |TestCity|5555555555|TestingX101@test.com|Testing@091|
 
 @RegistroUserSinPaisTTF
 Scenario Outline: Registro de usuario sin pais
@@ -224,8 +224,8 @@ Scenario Outline: Registro de usuario sin pais
   Then El usuario no se pudo registrar porque no tiene pais
 
   Examples:
-  |nombre |apellido  |fecha nacimiento|direccion     |codigo postal|ciudad  |estado   |telefono  |email              |password   |
-  |Test123|Testing123|01011991        |TestAddress99 |09999        |TestCity|TestState|5555555555|TestingX101@test.com|Testing@091|
+  |nombre |apellido  |fecha nacimiento  |direccion     |codigo postal|ciudad  |estado   |telefono  |email          x    |password   |
+  |Test123|Testing123|1991-01-01        |TestAddress99 |09999        |TestCity|TestState|5555555555|TestingX101@test.com|Testing@091|
 
 @RegistroUserSinTelefonoTTF
 Scenario Outline: Registro de usuario sin telefono
@@ -246,8 +246,8 @@ Scenario Outline: Registro de usuario sin telefono
   Then El usuario no se pudo registrar porque no tiene telefono
 
   Examples:
-  |nombre |apellido  |fecha nacimiento|direccion     |codigo postal|ciudad  |estado   |email               |password   |
-  |Test123|Testing123|01011991        |TestAddress99 |09999        |TestCity|TestState|TestingX101@test.com|Testing@091|
+  |nombre |apellido  |fecha nacimiento  |direccion     |codigo postal|ciudad  |estado   |email               |password   |
+  |Test123|Testing123|1991-01-01        |TestAddress99 |09999        |TestCity|TestState|TestingX101@test.com|Testing@091|
 
 @RegistroUserSinCorreo
 Scenario Outline: Registro de usuario sin correo
@@ -268,8 +268,8 @@ Scenario Outline: Registro de usuario sin correo
   Then El usuario no se pudo registrar porque no tiene correo
 
   Examples:
-  |nombre |apellido  |fecha nacimiento|direccion     |codigo postal|ciudad  |estado   |telefono  |password   |
-  |Test123|Testing123|01011991        |TestAddress99 |09999        |TestCity|TestState|5555555555|Testing@091|
+  |nombre |apellido  |fecha nacimiento  |direccion     |codigo postal|ciudad  |estado   |telefono  |password   |
+  |Test123|Testing123|1991-01-01        |TestAddress99 |09999        |TestCity|TestState|5555555555|Testing@091|
 
 @RegistroUserConCorreoInvalido
 Scenario Outline: Registro de usuario con correo invalido
@@ -291,8 +291,8 @@ Scenario Outline: Registro de usuario con correo invalido
   Then El usuario no se pudo registrar porque el correo es invalido
 
   Examples:
-  |nombre |apellido  |fecha nacimiento|direccion     |codigo postal|ciudad  |estado   |telefono  |email               |password   |
-  |Test123|Testing123|01011991        |TestAddress99 |09999        |TestCity|TestState|5555555555|1234567890          |Testing@091|
+  |nombre |apellido  |fecha nacimiento  |direccion     |codigo postal|ciudad  |estado   |telefono  |email     |password   |
+  |Test123|Testing123|1991-01-01        |TestAddress99 |09999        |TestCity|TestState|5555555555|1234567890|Testing@091|
 
 @RegistroUserSinPassword
 Scenario Outline: Registro de usuario sin password
@@ -313,8 +313,8 @@ Scenario Outline: Registro de usuario sin password
   Then El usuario no se pudo registrar porque no tiene password
 
   Examples:
-  |nombre |apellido  |fecha nacimiento|direccion     |codigo postal|ciudad  |estado   |telefono  |email               |
-  |Test123|Testing123|01011991        |TestAddress99 |09999        |TestCity|TestState|5555555555|TestingX101@test.com|
+  |nombre |apellido  |fecha nacimiento  |direccion     |codigo postal|ciudad  |estado   |telefono  |email               |
+  |Test123|Testing123|1991-01-01        |TestAddress99 |09999        |TestCity|TestState|5555555555|TestingX101@test.com|
 
 @RegistroUserConPasswordCorto
 Scenario Outline: Registro de usuario con password corto
@@ -336,8 +336,8 @@ Scenario Outline: Registro de usuario con password corto
   Then El usuario no se pudo registrar porque tiene password corto
 
   Examples:
-  |nombre |apellido  |fecha nacimiento|direccion     |codigo postal|ciudad  |estado   |telefono  |email               |password   |
-  |Test123|Testing123|01011991        |TestAddress99 |09999        |TestCity|TestState|5555555555|TestingX101@test.com|091        |
+  |nombre |apellido  |fecha nacimiento  |direccion     |codigo postal|ciudad  |estado   |telefono  |email               |password   |
+  |Test123|Testing123|1991-01-01        |TestAddress99 |09999        |TestCity|TestState|5555555555|TestingX101@test.com|091        |
 
 @RegistroUserConPasswordNoAceptado
 Scenario Outline: Registro de usuario con password no aceptado
@@ -359,8 +359,8 @@ Scenario Outline: Registro de usuario con password no aceptado
   Then El usuario no se pudo registrar porque tiene password no aceptado
 
   Examples:
-  |nombre |apellido  |fecha nacimiento|direccion     |codigo postal|ciudad  |estado   |telefono  |email               |password       |
-  |Test123|Testing123|01011991        |TestAddress99 |09999        |TestCity|TestState|5555555555|TestingX101@test.com|.......        |
+  |nombre |apellido  |fecha nacimiento  |direccion     |codigo postal|ciudad  |estado   |telefono  |email               |password       |
+  |Test123|Testing123|1991-01-01        |TestAddress99 |09999        |TestCity|TestState|5555555555|TestingX101@test.com|.......        |
 
 @ValidacionDropDownPractica
 Scenario: Validacion de cuentas opciones tiene el dropdown SORT
